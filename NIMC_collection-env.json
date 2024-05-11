@@ -1,0 +1,93 @@
+{
+	"id": "176234e9-aed6-4a61-adc5-17116adc76c2",
+	"name": "NIMC-eID",
+	"values": [
+		{
+			"key": "ClientId",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "ApplicationId",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "NIN1",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "NIN2",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "Fingerprint1",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "Fingerprint2",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "Fingerprint3",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "Fingerprint4",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "Fingerprint5",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "Fingerprint6",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "Fingerprint7",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "Fingerprint8",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "Fingerprint9",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "Fingerprint10",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		}
+	],
+	"_postman_variable_scope": "environment",
+	"_postman_exported_at": "2024-03-15T12:17:17.091Z",
+	"_postman_exported_using": "Postman/10.24.3"
+}
