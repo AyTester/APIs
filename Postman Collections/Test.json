@@ -13175,13 +13175,13 @@
 					"response": []
 				},
 				{
-					"name": "Bulk eID update Notification Copy",
+					"name": "Send Bulk eID update Notification with a wrong method",
 					"id": "d141b412-e9e7-45ec-b9b6-0458a167d1bd",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
 					"request": {
-						"method": "POST",
+						"method": "PUT",
 						"header": [],
 						"body": {
 							"mode": "raw",
