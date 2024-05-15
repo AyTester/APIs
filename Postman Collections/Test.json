@@ -13106,6 +13106,32 @@
 			"item": [
 				{
 					"name": "eID update Notification",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "2d6b8028-bbc3-4c6a-a6db-7c612e468dc3",
+								"exec": [
+									"var responseJson = pm.response.json();\r",
+									"\r",
+									"pm.test('Status code is 200', function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test('Response is an object with data property', function () {\r",
+									"    pm.expect(responseJson).to.be.an('object').that.has.property('message');\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify response value\", function() {\r",
+									"    pm.expect(responseJson.message).to.eql(\"Received\"); \r",
+									"    // pm.expect(responseJson.data.responseCode).to.eql(\"\");\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
 					"id": "f8b206fa-e161-403f-a6bf-ac6b5088706d",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -13129,6 +13155,28 @@
 				{
 					"name": "Bulk eID update Notification",
 					"id": "20f51773-431e-4433-9758-ba75c313d05e",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"uniqueId\": \"D30061455\",\r\n        \"date\": \"2024-04-12\"\r\n    },\r\n    {\r\n        \"uniqueId\": \"Q97620022\",\r\n        \"date\": \"2024-04-13\"\r\n    },\r\n    {\r\n        \"uniqueId\": \"W83025808\",\r\n        \"date\": \"2024-07-12\"\r\n    },\r\n    {\r\n        \"uniqueId\": \"R30061455\",\r\n        \"date\": \"2024-04-12\"\r\n    },\r\n    {\r\n        \"uniqueId\": \"T97620022\",\r\n        \"date\": \"2024-04-13\"\r\n    },\r\n    {\r\n        \"uniqueId\": \"Y83025808\",\r\n        \"date\": \"2024-07-12\"\r\n    },\r\n    {\r\n        \"uniqueId\": \"U30061455\",\r\n        \"date\": \"2024-04-12\"\r\n    },\r\n    {\r\n        \"uniqueId\": \"P97620022\",\r\n        \"date\": \"2024-04-13\"\r\n    },\r\n    {\r\n        \"uniqueId\": \"G83025808\",\r\n        \"date\": \"2024-07-12\"\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{url}}api/v1/nimc/e-id/update/bulk-notify"
+					},
+					"response": []
+				},
+				{
+					"name": "Bulk eID update Notification Copy",
+					"id": "d141b412-e9e7-45ec-b9b6-0458a167d1bd",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
