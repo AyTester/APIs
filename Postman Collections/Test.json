@@ -13234,8 +13234,8 @@
 								"exec": [
 									"var responseJson = pm.response.json();\r",
 									"\r",
-									"pm.test('Status code is 405', function () {\r",
-									"    pm.response.to.have.status(405);\r",
+									"pm.test('Status code is 404', function () {\r",
+									"    pm.response.to.have.status(404);\r",
 									"});\r",
 									"\r",
 									"pm.test('Response is an object with data property', function () {\r",
@@ -13244,8 +13244,8 @@
 									"});\r",
 									"\r",
 									"pm.test(\"Verify response value\", function() {\r",
-									"    pm.expect(responseJson.title).to.eql(\"Method Not Allowed\");\r",
-									"    pm.expect(responseJson.detail).to.eql(\"Method 'PUT' is not supported.\"); \r",
+									"    pm.expect(responseJson.title).to.eql(\"Not Found\");\r",
+									"    pm.expect(responseJson.detail).to.eql(\"No endpoint POST /api/v1/nimc/e-id/updatebulk-notify.\"); \r",
 									"    // pm.expect(responseJson.data.responseCode).to.eql(\"\");\r",
 									"});"
 								],
@@ -13259,7 +13259,7 @@
 						"disableBodyPruning": true
 					},
 					"request": {
-						"method": "PUT",
+						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
@@ -13270,7 +13270,7 @@
 								}
 							}
 						},
-						"url": "{{url}}api/v1/nimc/e-id/update/bulk-notify"
+						"url": "{{url}}api/v1/nimc/e-id/updatebulk-notify"
 					},
 					"response": []
 				}
